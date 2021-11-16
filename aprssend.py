@@ -1,10 +1,10 @@
 import aprslib
 import time
 from datetime import datetime
-
+#
 thedate = datetime.now().strftime('%d%H%M')
 
-AIS = aprslib.IS("", passwd="", port=14580)
+AIS = aprslib.IS("add callsign here", passwd="add password here", port=14580)
 AIS.connect()
 
 AIS.sendall(f"-R>APU25N,TCPIP*,qAC,T2GREECE:;RV59-Rpt *{thedate}z3440.80N/03256.50E!REPORTED FOR VIOLATION OF TOS")
