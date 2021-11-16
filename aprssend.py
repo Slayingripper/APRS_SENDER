@@ -10,7 +10,11 @@ AIS = aprslib.IS("{callsign}", passwd="{password}", port=14580)
 AIS.connect()
 #add the message to send here
 comment = ""
-
+#add the location here (latitude and longitude)
+latitude = "" #example: "3440.80N"
+longitude = "" #example: "03256.50E"
+#add the symbol here
+symbol = ""
 AIS.sendall(f"{callsign}-R>APU25N,TCPIP*,qAC,T2GREECE:;RV59-Rpt *{thedate}z3440.80N/03256.50E!{comment}")
 AIS.sendall(f"{callsign}-R>APU25N,TCPIP*,qAC,T2GREECE:;R5b_Rpt  *{thedate}z3440.81N/03256.51E!{comment}")
 AIS.sendall(f"{callsign}-R>APU25N,TCPIP*,qAC,T2GREECE:;RV59=Rpt *{thedate}z3440.82N/03256.52E!{comment}")
