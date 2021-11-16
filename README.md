@@ -64,8 +64,23 @@ def otpcheck(my_token):
 if __name__ == '__main__':
     otpcheck("")
 ```
-Now when coding up your APRS decoder you can use a simple check to see if the token is valid.
+Now when coding up your APRS decoder you can use a simple check to see if the token is valid. Example from previous project which use an RTLsdr dongle for APRS decoding:
 
+```
+  def log_warn(self, log_message):
+        """Logs a warning message to console, file.
+        Args:
+            log_message: The string message to log.
+        """
+        self.__log_any(Colors.YELLOW, self.WRN_PREFIX, log_message)
+        logging.warning(log_message)
+        packetexecute(log_message)
+```
 
+Inside the log packetexecute function which reads the raw packet
+```
+        newpacket = packetstring[packetstring.find("(")+1 : packetstring.find(")")]
+```
+This is just a proof of concept that could be implemented to allow for a more authentication method. 
 # Disclaimer
 This is for educational purposes only. It is to show the fundamental flaw of the APRS network. It is not meant to be "used" in a real world scenario. Doing this to cause harm to others is not the purpose of this project. Sometimes people are not aware of the damage they are doing, and they are not aware of the consequences. Educate them on why what they are doing is wrong. If that then fails, and they persist, more appropriate action should be taken to prevent harm to others.
