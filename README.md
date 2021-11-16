@@ -34,6 +34,10 @@ function aprspass ($callsign) {
 ```
 The password is generated using a known hash function, and the callsign is hashed using the same hash function. The result is a number between 0 and 32767. The password is then the result of the hash function, and the callsign is hashed again, and the result is the password.
 Due to regulations in the HAM radio license, encryption is not allowed. But authentication is allowed. That is why passwords are used to distinguish  between users. 
+# Requirments 
+1. Python 3.7 +
+2. Aprslib
+
 
 # How to use 
 
