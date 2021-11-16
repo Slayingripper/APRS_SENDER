@@ -17,10 +17,5 @@ longitude = "" #example: "03256.50E"
 #refer to http://www.aprs.org/symbols.html for a list of symbols
 symbol = ""
 AIS.sendall(f"{callsign}-R>APU25N,TCPIP*,qAC,T2GREECE:;RV59-Rpt *{thedate}z{latitude}/{longitude}{symbol}{comment}")
-AIS.sendall(f"{callsign}-R>APU25N,TCPIP*,qAC,T2GREECE:;R5b_Rpt  *{thedate}z{latitude}/{longitude}{symbol}{comment}")
-AIS.sendall(f"{callsign}-R>APU25N,TCPIP*,qAC,T2GREECE:;RV59=Rpt *{thedate}z{latitude}/{longitude}{symbol}{comment}")
-AIS.sendall(f"{callsign}-R>APU25N,TCPIP*,qAC,T2GREECE:;RV59_Rpt *{thedate}z{latitude}/{longitude}{symbol}{comment}")
-AIS.sendall(f"{callsign}-R>APU25N,TCPIP*,qAC,T2GREECE:;RV59*Rpt *{thedate}z{latitude}/{longitude}{symbol}{comment}")
-AIS.sendall(f"{callsign}-R>APU25N,TCPIP*,qAC,T2GREECE:;R5b-Rpt  *{thedate}z{latitude}/{longitude}{symbol}{comment}")
 
 
