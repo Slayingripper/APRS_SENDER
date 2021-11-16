@@ -44,5 +44,4 @@ Due to regulations in the HAM radio license, encryption is not allowed. But auth
 4. Use this responsibly 
 
 # Disclaimer
-
 This is for educational purposes only. It is to show the fundamental flaw of the APRS network. It is not meant to be "used" in a real world scenario. Doing this to cause harm to others is not the purpose of this project. Sometimes people are not aware of the damage they are doing, and they are not aware of the consequences. Educate them on why what they are doing is wrong. If that then fails, and they persist, more appropriate action should be taken to prevent harm to others.
