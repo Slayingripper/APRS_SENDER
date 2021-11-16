@@ -1,7 +1,7 @@
 import aprslib
 import time
 from datetime import datetime
-#
+#grab the current time and date in zulu time
 thedate = datetime.now().strftime('%d%H%M')
 
 AIS = aprslib.IS("add callsign here", passwd="add password here", port=14580)
