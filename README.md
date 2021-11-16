@@ -83,7 +83,8 @@ Inside the log packetexecute function which reads the raw packet
 ```
 This is just a proof of concept that could be implemented to allow for a more authentication method. 
 # Notes
-
+This is not something new. This is just a simple script to help you get started with APRS. In many cases I have found that the documentation surrounding APRS can be confusing as its a bit too detailed sometimes. This is a known security "issue" and has been abused plenty of times.
+You don't need bulky programs to send out your fixed location, just fire up the script and add it to your crontab or scheduled task. 
 
 
 # Disclaimer
