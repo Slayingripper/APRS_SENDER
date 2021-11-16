@@ -49,6 +49,23 @@ Due to regulations in the HAM radio license, encryption is not allowed. But auth
 4. Use this responsibly 
 
 # Improvements to security
+One time passwords could be used to further authenticate the users. The hash could be computed unique to each user and can be used in conjunction with apps like Google Authenticator. 
+When creating your own APRS applications you can implement OTP to be included using only a few lines of code. 
+
+Here is an example : 
+```
+import onetimepass as otp
+def otpcheck(my_token):
+    my_secret = "insert md5 hash here"
+    #my_token = 662120
+    is_valid = otp.valid_totp(token=my_token, secret=my_secret)
+    print(is_valid)
+
+if __name__ == '__main__':
+    otpcheck("")
+```
+Now when coding up your APRS decoder you can use a simple check to see if the token is valid.
+
 
 # Disclaimer
 This is for educational purposes only. It is to show the fundamental flaw of the APRS network. It is not meant to be "used" in a real world scenario. Doing this to cause harm to others is not the purpose of this project. Sometimes people are not aware of the damage they are doing, and they are not aware of the consequences. Educate them on why what they are doing is wrong. If that then fails, and they persist, more appropriate action should be taken to prevent harm to others.
