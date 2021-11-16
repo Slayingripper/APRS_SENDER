@@ -31,3 +31,4 @@ function aprspass ($callsign) {
 
 ?>
 ```
+Due to regulations in the HAM radio licence, encryption is not allowed. But authentication is allowed. That is why password are used to distinguish  between users.
