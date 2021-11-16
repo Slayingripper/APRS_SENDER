@@ -37,8 +37,10 @@ Due to regulations in the HAM radio licence, encryption is not allowed. But auth
 
 1. First open up [https://apps.magicbug.co.uk/passcode/] and generate a password for the callsign you want to use. 
 2. Open up the aprssend.py file and add the credentials include the location, symbol you want to use.
+3. Reference the image bellow for symbols to use.
+   ![alt](http://www.aprs.org/symbols/Icon-set.gif)
 3. For added effect you can add this to a crontab to run at specified time frames. 
-4. User responsibly 
+4. Use this responsibly 
 
 # Disclaimer
 
